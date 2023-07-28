@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Chat App</title>
+</head>
+<body>
+    <h1>iChat💬</h1>
+    <div class="main">
+        <div class="name">
+<span><i class="far fa-user"></i></span>
+<input type="text" id="name-input" class="name-input"
+ value="anonymous" maxlength="20"/>
+        </div>
+    <ul class="message-container" id="message-container">
+      
+
+        <li class="message-feedback">
+            <p class ="feedback" id="feedback">🖋 Someone is typing a mesage</p>
+        </li>
+     </ul>
+    <form class="message-form" id="message-form">
+        <input type="text" name="message" id="message-input" class="message-input">
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+            send<span><i class="fas fa-paper-plane"></i></span>
+        </button>
+    </form>
+    
+    </div>
+    <h3 class="clients-total" id="client-total">Total Clients:</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"
+     integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"> 
+    </script>
+</body>
+</html>
